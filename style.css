@@ -1,0 +1,402 @@
+body{
+    margin: 0px;
+}
+/* body-header part-----------------------------------------  */
+
+#body-header{
+    margin-top: -16px;
+    height: 62vh;
+    opacity: 1;
+    background-image: url(dubai.jpg);
+    background-position: center;
+    background-size: cover ;
+    background-attachment: fixed;
+}
+.text-center{
+    text-align: center;
+}
+
+.horizontal-list{
+   list-style: none;
+   padding: 0px; 
+}
+
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 20px 20px 0px;
+    margin-top: 18px;
+    letter-spacing: 0.1rem;
+}
+
+.horizontal-list li a{
+    color: white;
+    font-size: 1rem;
+    font-weight: 100;
+    text-decoration: none;
+    transition: color 0.5s ,border-bottom 4s;
+}
+.horizontal-list li a:hover{
+    color: rgb(94, 53, 243);
+    border-bottom: 1px solid white;
+}
+
+/* name-icon container */
+#name-icon-container{
+    margin-top: 8vh;
+}
+#my-name{
+    font-size: 3rem;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.1rem;
+    margin-top: -0.5rem;
+}
+
+.social-icons li a i{
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+/* body-main section----------------------------------------- */
+/* about section */
+
+section{
+    width: 100%;
+    height: auto; /*make it auto when project is ready*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* nth-child section----------------------------------------- */
+section:nth-child(2n){
+    background-color: rgb(241, 241, 241);
+    /* background:linear-gradient(purple,orange); */
+}
+section:nth-child(2n+1){
+    background-color: white;
+}
+
+/* ---------------------------------------------------------- */
+/* common section heading */
+.section-heading{
+    width:auto ;
+    margin: 10px auto;
+    padding: 20px 10px 10px;
+}
+.section-heading span{
+    font-size: 33px;
+    color: rgb(21, 21, 94);
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+/* common bottom border class */
+.mb35px{
+    margin-bottom: 35px;
+}
+/* about section----------------------------------------- */
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+    font-weight: 200;
+}
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -18vh;
+    margin-bottom: 12px;
+}
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 3px rgb(70, 70, 70);
+}
+#intro{
+    /* text-align: center; */
+    font-weight: 500;
+    font-size: 21px;
+    margin: 6px 25px 25px 6px;
+}
+/* skill-section------------------------------------------- */
+/* flex container */
+.skill-display{
+    width: 61%;
+    margin-bottom: 25px;
+    /* height: auto; */
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+/* parent container of skill indicating boxes */
+.skill-progress{
+    width: 13rem;
+    height: 1.3rem;
+    background-color: #000000;
+    border-radius: 0.8rem;
+    margin: 10px 30px 30px 18px ;
+    box-shadow: 3px 2px 2px 3px rgb(138, 138, 138);
+    margin-bottom: 68px;
+}
+/* common class to set round radius to child container */
+.skill-progress>div{
+    border-radius: 12px 0px 0px 12px;
+}
+/* common classes for bg color to child containers */
+.bg-blue{
+    background-color: rgb(58, 58, 231);
+}
+.bg-orange{
+    background-color: rgb(250, 150, 0);
+}
+.bg-sky{
+    background-color: rgb(33, 184, 243);
+}
+.bg-yellow{
+    background-color: rgb(247, 243, 12);
+}
+.bg-green{
+    background-color: rgb(15, 235, 15);
+}
+.bg-red{
+    background-color: red;
+}
+.bg-fluorescent{
+    background-color: rgb(255, 0, 221);
+}
+.bg-unique{
+    background-color: blueviolet;
+}
+
+/* child container ( %-skill indicating boxes) */
+.ninety-percent{
+    width: 90%;
+    height: inherit;
+}
+.eighty-percent{
+    width: 80%;
+    height: inherit;
+}
+.seventy-percent{
+    width: 70%;
+    height: inherit;
+}
+.sixty-percent{
+    width: 60%;
+    height: inherit;
+}
+.fifty-percent{
+    width: 50%;
+    height: inherit;
+}
+.forty-percent{
+    width: 40%;
+    height: inherit;
+}
+/* common class for skill name */
+.skill-name span{
+    color: rgb(0, 0, 0) ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-left: 10px;
+    margin-top: auto;
+}
+
+/* Education section----------------------------------------------- */
+.timeline{
+    width: 75%;
+    position: relative;
+    /* border: 1px solid black; */
+    background-color: rgb(255, 238, 206);
+    margin-bottom: 15px;
+}
+.timeline-box{
+    width: 40%;
+    position: relative;
+    /* border: 1px solid black; */
+    left: 5%;
+    margin: 5px;
+    min-height: 150px;
+}
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+.timeline-box:nth-child(2n+1)::after {
+    content: '';
+    position: absolute;
+    top: 45%;
+    right: -12%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgb(49, 1, 128);
+    z-index: 1;
+}
+.timeline-box:nth-child(2n)::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -10%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgb(49, 1, 128);
+    z-index: 1;
+}
+.timeline-divider {
+    position: absolute;
+    height: 75%;
+    width: 0;
+    border: 1px dashed #6e6e6e;
+    top: 10%;
+    left: 50%;
+}
+.timeline-traveller {
+    position: sticky;
+    top: 43%;
+    transform: rotate(90deg);
+    z-index: 2;
+    font-size: 1.3rem;
+}
+
+.degree-name p{
+    font-weight: 900;
+    font-size: 38px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(1, 1, 128);
+}
+.institute-name p{
+    font-weight: 700;
+    font-size: 25px;
+    color: rgb(77, 39, 250);
+    
+}
+.year{
+    font-weight: 200;
+    color: #444444;
+}
+.about-study p{
+    font-weight: 200;
+    font-size:20px ;
+    color: black;
+}
+
+/* contact section------------------------------------------- */
+#contact{
+    width: 100%;
+    height: auto; /*later change to auto */
+    background-color: aqua;
+    margin-top: 5%;
+    background: linear-gradient(to right,blue ,rgb(255, 174, 53) 60%);
+}
+#contact-heading{
+    color: white;
+    font-size: 43px;
+    letter-spacing: 0.9px;
+    /* text-decoration: underline; */
+}
+#contact-container{
+    width: 85%;
+    height: 70%;
+    display: flex;
+    /* border: 1px solid black; */
+}
+/* form part--------------------------------- */
+#contact-form-container{
+    width: 50%;
+    /* border: 1px solid black; */
+    margin: 5px;
+}
+#contact-form input,textarea{
+    max-width: 80%;
+    margin: 15px;
+    padding: 4px 15px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: var(--contact-light-text-color);
+    background: transparent;
+    width: 95%;
+    line-height: 1.8;
+    font-size: 1.2rem;
+}
+#contact-form ::placeholder{
+    color: rgb(0, 0, 0);
+    width: 25px;
+    font-weight: 300;
+}
+
+#send-button{
+    width: 30%;
+    height: 40%;
+    margin-top: 3%;
+    margin-left: 31%;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    font-size: 0.95rem;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 3px;
+}
+#contact-form button:hover{
+    background-color: rgb(75, 75, 75);
+}
+
+/* my details part-------------------------------- */
+#my-details-container{
+    width: 50%;
+    /* border: 1px solid black; */
+    margin: 5px;
+    left: 3%;
+    font-family: sans-serif;
+}
+#my-details-container h2{
+    color: white;
+    font-size: 25px;
+}
+.my-details-info-container{
+    margin-left: 2%;
+}
+.my-details-info-container p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 5px;
+}
+.my-details-info-container span{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 100;
+    margin: auto;
+    padding: 4px ;
+    line-height: 1.3;
+}
+#icon-details{
+    font-size: 2.5rem;
+}
+#social-icon-at-last{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 10px;
+}
+
+/* media query---------------------------- */
+@media screen and (max-width:750px){
+    html{
+        font-size: 10px;
+    }
+}
